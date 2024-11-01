@@ -63,41 +63,41 @@
     {
         "key": "shift+.",
         "command": "paredit.slurpSexpForward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+alt+.",
         "command": "-paredit.slurpSexpForward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "shift+,",
         "command": "paredit.barfSexpForward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+alt+,",
         "command": "-paredit.barfSexpForward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "shift+alt+,",
         "command": "paredit.slurpSexpBackward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+alt+.",
         "command": "-paredit.slurpSexpBackward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "shift+alt+.",
         "command": "paredit.barfSexpBackward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+alt+,",
         "command": "-paredit.barfSexpBackward",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     }
 ]
