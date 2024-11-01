@@ -20,3 +20,4 @@ MAC: ALT -> OPTION
 | slurp backward     | `ALT + <`           |
 | barf backward      | `ALT + >`           |
 | kill sexp forward  | `ALT + d`           |
+| raise sexp         | `ALT + r`           |

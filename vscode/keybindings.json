@@ -104,5 +104,10 @@
         "key": "alt+d",
         "command": "paredit.killSexpForward",
         "when": "editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+r",
+        "command": "paredit.raiseSexp",
+        "when": "editorLangId == 'clojure'"
     }
 ]
