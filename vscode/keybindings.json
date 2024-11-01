@@ -49,5 +49,15 @@
         "key": "shift+alt+'",
         "command": "paredit.wrapAroundQuote",
         "when": "editorLangId == 'clojure'"
+    },
+    {
+        "key": "shift+l",
+        "command": "paredit.forwardSexpOrUp",
+        "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+h",
+        "command": "paredit.backwardSexpOrUp",
+        "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     }
 ]
