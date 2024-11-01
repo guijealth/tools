@@ -99,5 +99,10 @@
         "key": "ctrl+shift+alt+,",
         "command": "-paredit.barfSexpBackward",
         "when": "editorTextFocus && editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "alt+d",
+        "command": "paredit.killSexpForward",
+        "when": "editorLangId == 'clojure'"
     }
 ]
