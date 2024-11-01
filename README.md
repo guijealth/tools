@@ -21,3 +21,5 @@ MAC: ALT -> OPTION
 | barf backward      | `ALT + >`           |
 | kill sexp forward  | `ALT + d`           |
 | raise sexp         | `ALT + r`           |
+| drag sexp forward  | `ALT + J`           |
+| drag sexp backward | `ALT + K`           |

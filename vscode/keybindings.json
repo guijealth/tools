@@ -109,5 +109,15 @@
         "key": "alt+r",
         "command": "paredit.raiseSexp",
         "when": "editorLangId == 'clojure'"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "paredit.dragSexprForward",
+        "when": "editorLangId == 'clojure'"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "paredit.dragSexprBackward",
+        "when": "editorLangId == 'clojure'"
     }
 ]
