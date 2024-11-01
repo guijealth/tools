@@ -59,5 +59,45 @@
         "key": "shift+h",
         "command": "paredit.backwardSexpOrUp",
         "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+.",
+        "command": "paredit.slurpSexpForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+.",
+        "command": "-paredit.slurpSexpForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+,",
+        "command": "paredit.barfSexpForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+,",
+        "command": "-paredit.barfSexpForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+,",
+        "command": "paredit.slurpSexpBackward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+.",
+        "command": "-paredit.slurpSexpBackward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+.",
+        "command": "paredit.barfSexpBackward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+,",
+        "command": "-paredit.barfSexpBackward",
+        "when": "editorTextFocus"
     }
 ]
