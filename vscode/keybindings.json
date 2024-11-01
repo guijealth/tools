@@ -1,0 +1,53 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "shift+alt+9",
+        "command": "paredit.wrapAroundParens",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+0",
+        "command": "paredit.wrapAroundParens",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+9",
+        "command": "-paredit.wrapAroundParens",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+[",
+        "command": "paredit.wrapAroundSquare",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+]",
+        "command": "paredit.wrapAroundSquare",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+[",
+        "command": "-paredit.wrapAroundSquare",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+[",
+        "command": "paredit.wrapAroundCurly",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+]",
+        "command": "paredit.wrapAroundCurly",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+[",
+        "command": "-paredit.wrapAroundCurly",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+'",
+        "command": "paredit.wrapAroundQuote",
+        "when": "editorLangId == 'clojure'"
+    }
+]
