@@ -119,5 +119,15 @@
         "key": "alt+k",
         "command": "paredit.dragSexprBackward",
         "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "backspace",
+        "command": "paredit.deleteBackward",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !calva:cursorInComment && !editorHasMultipleSelections && !editorReadOnly && editorLangId == 'clojure' && paredit:keyMap == 'strict' && vim.active && vim.mode == 'Insert'"
+    },
+    {
+        "key": "backspace",
+        "command": "-paredit.deleteBackward",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !calva:cursorInComment && !editorHasMultipleSelections && !editorReadOnly && editorLangId == 'clojure' && paredit:keyMap == 'strict'"
     }
 ]
