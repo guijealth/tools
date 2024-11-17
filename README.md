@@ -1,14 +1,14 @@
 # tools
 Tool specific configurations
 
-## VSCode + Calva (Clojure)
+## VSCode + Vim + Calva (Clojure)
 
 ./vscode
 
 MAC: ALT -> OPTION
 
 | Command            | Keybindings         |
-|--------------------|---------------------|
+| ------------------ | ------------------- |
 | wrap around parens | `ALT + (` `ALT + )` |
 | wrap around square | `ALT + [` `ALT + ]` |
 | wrap around curly  | `ALT + {` `ALT + }` |
@@ -20,6 +20,6 @@ MAC: ALT -> OPTION
 | slurp backward     | `ALT + <`           |
 | barf backward      | `ALT + >`           |
 | kill sexp forward  | `ALT + d`           |
-| raise sexp         | `ALT + r`           |
+| raise sexp         | `ALT + SHIFT + r`   |
 | drag sexp forward  | `ALT + j`           |
 | drag sexp backward | `ALT + k`           |

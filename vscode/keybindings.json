@@ -53,12 +53,22 @@
     {
         "key": "shift+l",
         "command": "paredit.forwardSexpOrUp",
-        "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
+        "when": "editorLangId == 'clojure' && vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+l",
+        "command": "paredit.selectForwardSexpOrUp",
+        "when": "editorLangId == 'clojure' && vim.active && vim.mode == 'Visual'"
     },
     {
         "key": "shift+h",
         "command": "paredit.backwardSexpOrUp",
-        "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
+        "when": "editorLangId == 'clojure' && vim.active && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+h",
+        "command": "paredit.selectBackwardSexpOrUp",
+        "when": "editorLangId == 'clojure' && vim.active && vim.mode == 'Visual'"
     },
     {
         "key": "shift+.",
@@ -106,7 +116,7 @@
         "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
     {
-        "key": "alt+r",
+        "key": "alt-shift+r",
         "command": "paredit.raiseSexp",
         "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert'"
     },
