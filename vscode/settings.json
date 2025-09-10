@@ -21,18 +21,8 @@
         "maxLength": 50
     },
     "calva.autoOpenInspector": false,
-    "editor.rulers": [
-        {
-            "column": 100,
-            "color": "#cccccc22"
-        },
-        {
-            "column": 120,
-            "color": "#cccccc22"
-        }
-    ],
     "editor.minimap.size": "fit",
-    "editor.minimap.maxColumn": 100,
+    "editor.minimap.maxColumn": 120,
     "calva.useTestExplorer": true,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -92,7 +82,6 @@
     "editor.lineNumbers": "off",
     "editor.showFoldingControls": "never",
     "workbench.layoutControl.type": "menu",
-    "window.commandCenter": false,
     "window.title": "${rootName}${separator}${profileName}",
     "workbench.editor.showTabs": "single",
     "settings.cycle": [
@@ -117,6 +106,17 @@
                     "workbench.statusBar.visible": true
                 }
             ]
+        },
+        {
+            "id": "activityBar",
+            "values": [
+                {
+                    "workbench.activityBar.location": "hidden",
+                },
+                {
+                    "workbench.activityBar.location": "default",
+                }
+            ]
         }
     ],
     "[jsonc]": {
@@ -124,4 +124,7 @@
     },
     "workbench.colorTheme": "Doom Emacs",
     "diffEditor.renderSideBySide": true,
+    "window.commandCenter": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "makefile.configureOnOpen": true
 }
