@@ -80,10 +80,11 @@
     "editor.renderLineHighlight": "none",
     "editor.glyphMargin": false,
     "editor.lineNumbers": "off",
-    "editor.showFoldingControls": "never",
+    "editor.showFoldingControls": "mouseover",
     "workbench.layoutControl.type": "menu",
     "window.title": "${rootName}${separator}${profileName}",
     "workbench.editor.showTabs": "single",
+    "editor.stickyScroll.maxLineCount": 10,
     "settings.cycle": [
         {
             "id": "lineNumbers",
@@ -117,6 +118,17 @@
                     "workbench.activityBar.location": "default",
                 }
             ]
+        },
+        {
+            "id": "glyphMargin",
+            "values": [
+                {
+                    "editor.glyphMargin": false,
+                },
+                {
+                    "editor.glyphMargin": true,
+                }
+            ]
         }
     ],
     "[jsonc]": {
@@ -126,5 +138,23 @@
     "diffEditor.renderSideBySide": true,
     "window.commandCenter": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "makefile.configureOnOpen": true
+    "makefile.configureOnOpen": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.confirmBeforeClose": "always",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
 }

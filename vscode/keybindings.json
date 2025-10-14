@@ -170,5 +170,13 @@
     {
         "key": "alt+a",
         "command": "settings.cycle.activityBar"
+    },
+    {
+        "key": "alt+m",
+        "command": "settings.cycle.glyphMargin"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.view.testing.focus"
     }
 ]
