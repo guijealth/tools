@@ -16,7 +16,7 @@
     "editor.largeFileOptimizations": false,
     "calva.prettyPrintingOptions": {
         "printEngine": "pprint",
-        "enabled": true,
+        "enabled": false,
         "width": 120,
         "maxLength": 50
     },
@@ -62,7 +62,7 @@
         "otherOutput": "repl-window"
     },
     "editor.minimap.enabled": false,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "docker.extension.enableComposeLanguageServer": false,
     "workbench.activityBar.location": "hidden",
     "workbench.statusBar.visible": false,
@@ -156,5 +156,52 @@
     },
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
-    }
+    },
+    "vscode-hurl-runner.verboseMode": "very-verbose",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "-"
+            ],
+            "commands": [
+                {
+                    "command": "oil-code.open"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<cr>"
+            ],
+            "commands": [
+                {
+                    "command": "oil-code.select"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<c-l>"
+            ],
+            "commands": [
+                {
+                    "command": "oil-code.refresh"
+                }
+            ]
+        },
+        {
+            "before": [
+                "`"
+            ],
+            "commands": [
+                {
+                    "command": "oil-code.cd"
+                }
+            ]
+        }
+    ],
+    "oil-code.hasNerdFont": true,
+    "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+    "oil-code.enableWorkspaceEdit": true,
+    "oil-code.enableAlternateConfirmation": true
 }

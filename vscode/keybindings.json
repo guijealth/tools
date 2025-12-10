@@ -178,5 +178,15 @@
     {
         "key": "alt+t",
         "command": "workbench.view.testing.focus"
+    },
+    {
+        "key": "alt+cmd+r",
+        "command": "vscode-hurl-runner.runHurl",
+        "when": "editorTextFocus && editorLangId == 'hurl'"
+    },
+    {
+        "key": "alt+cmd+h",
+        "command": "-vscode-hurl-runner.runHurl",
+        "when": "editorTextFocus && editorLangId == 'hurl'"
     }
 ]
