@@ -159,6 +159,22 @@
     "vscode-hurl-runner.verboseMode": "very-verbose",
     "vim.leader": "<space>",
     "vim.useSystemClipboard": true,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "r"
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && !suggestWidgetVisible && editorLangId == 'clojure'",
+            "commands": [
+                {
+                    "command": "calva.evaluateSelection"
+                }
+            ]
+        }
+    ],
     "vim.normalModeKeyBindings": [
         // project
         {
@@ -463,6 +479,20 @@
             "commands": [
                 {
                     "command": "calva.evaluateSelection"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "E"
+            ],
+            "when": "calva:connected",
+            "commands": [
+                {
+                    "command": "calva.sendCurrentFormToOutputWindow"
                 }
             ]
         },
