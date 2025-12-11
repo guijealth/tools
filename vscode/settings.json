@@ -371,6 +371,9 @@
             "commands": [
                 {
                     "command": "oil-code.open"
+                },
+                {
+                    "command": "oil-code.preview"
                 }
             ]
         },
@@ -411,6 +414,15 @@
                 {
                     "command": "oil-code.cd"
                 }
+            ]
+        },
+        {
+            "before": [
+                "-"
+            ],
+            "when": "editorTextFocus && editorLangId == 'oil'",
+            "commands": [
+                "oil-code.open"
             ]
         },
         // calva
@@ -592,5 +604,7 @@
     "projectManager.sortList": "Recent",
     "projectManager.git.baseFolders": [
         "~/Work"
-    ]
+    ],
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }

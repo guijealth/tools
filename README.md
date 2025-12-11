@@ -1,7 +1,22 @@
 # tools
 Tool specific configurations
 
-## VSCode + Vim + Calva (Clojure)
+## VSCode + dired
+
+./vscode
+
+MAC: ALT -> OPTION
+
+
+| Command    | Keybindings |
+| ---------- | ----------- |
+| open       | CTRL+x d    |
+| close      | ESC         |
+| preview    | ALT+p       |
+| parent dir | -           |
+
+
+## VSCode + Closure
 
 ./vscode
 
@@ -79,5 +94,3 @@ MAC: ALT -> OPTION
 |                           | SPC m t l  |                                     | cider-test-run-loaded-tests                        |
 |                           | SPC m t r  |                                     | cider-test-rerun-failed-tests                      |
 |                           | SPC m t s  |                                     | cider-test-run-ns-tests-with-filters               |
-
-
