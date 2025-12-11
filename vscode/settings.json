@@ -64,7 +64,7 @@
     "files.autoSave": "off",
     "docker.extension.enableComposeLanguageServer": false,
     "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
     "workbench.sideBar.location": "right",
     "editor.hideCursorInOverviewRuler": true,
     "editor.overviewRulerBorder": false,
@@ -408,8 +408,9 @@
         },
         {
             "before": [
-                "`"
+                "<a-`>"
             ],
+            "when": "editorTextFocus && editorLangId == 'oil'",
             "commands": [
                 {
                     "command": "oil-code.cd"
@@ -606,5 +607,8 @@
         "~/Work"
     ],
     "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "[clojure]": {
+        "editor.defaultFormatter": "betterthantomorrow.calva"
+    }
 }
