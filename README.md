@@ -1,12 +1,15 @@
 # tools
+
 Tool specific configurations
 
-## VSCode + dired
+## VSCode
 
-./vscode
+path: ./vscode
+macOS: ALT -> OPTION
 
-MAC: ALT -> OPTION
+### Dired
 
+Use vim keybindings
 
 | Command    | Keybindings |
 | ---------- | ----------- |
@@ -15,12 +18,9 @@ MAC: ALT -> OPTION
 | preview    | ALT+p       |
 | parent dir | -           |
 
+### Closure
 
-## VSCode + Closure
-
-./vscode
-
-MAC: ALT -> OPTION
+**Paredit**
 
 | Command            | Keybindings         |
 | ------------------ | ------------------- |
@@ -38,6 +38,8 @@ MAC: ALT -> OPTION
 | raise sexp         | `ALT + SHIFT + r`   |
 | drag sexp forward  | `ALT + j`           |
 | drag sexp backward | `ALT + k`           |
+
+**CIDER**
 
 | Command                   | Keybinding | Calva Command                       | CIDER Command                                      |
 | ------------------------- | ---------- | ----------------------------------- | -------------------------------------------------- |
