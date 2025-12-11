@@ -3,7 +3,6 @@
     "window.zoomLevel": 1,
     "redhat.telemetry.enabled": false,
     "editor.accessibilitySupport": "off",
-    "vim.useSystemClipboard": true,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "security.workspace.trust.untrustedFiles": "open",
     "csv-edit.readOption_hasHeader": "true",
@@ -158,15 +157,189 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "vscode-hurl-runner.verboseMode": "very-verbose",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
+        // project
         {
             "before": [
+                "leader",
+                "p",
+                "p"
+            ],
+            "commands": [
+                {
+                    "command": "projectManager.listProjects"
+                }
+            ]
+        },
+        // windows
+        {
+            "before": [
+                "leader",
+                "w",
+                "v"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "s"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditorDown"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "q"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "+"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.increaseViewWidth"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
                 "-"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.decreaseViewWidth"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "h"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateLeft"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "l"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateRight"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "j"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateDown"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "k"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateUp"
+                }
+            ]
+        },
+        // terminal
+        {
+            "before": [
+                "leader",
+                "o",
+                "t"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.toggleTerminal"
+                }
+            ]
+        },
+        // explorer
+        {
+            "before": [
+                "leader",
+                "o",
+                "p"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.view.explorer"
+                }
+            ]
+        },
+        // fold
+        {
+            "before": [
+                "z",
+                "a"
+            ],
+            "when": "editorTextFocus && foldingEnabled",
+            "commands": [
+                {
+                    "command": "editor.toggleFold"
+                }
+            ]
+        },
+        // dired
+        {
+            "before": [
+                "<c-x>",
+                "d"
             ],
             "commands": [
                 {
                     "command": "oil-code.open"
                 }
+            ]
+        },
+        {
+            "before": [
+                "<esc>"
+            ],
+            "when": "editorTextFocus && editorLangId == 'oil'",
+            "commands": [
+                "oil-code.close"
             ]
         },
         {
@@ -198,10 +371,171 @@
                     "command": "oil-code.cd"
                 }
             ]
+        },
+        // calva
+        {
+            "before": [
+                "leader",
+                "m",
+                "c"
+            ],
+            "when": "workspaceFolderCount > 0",
+            "commands": [
+                {
+                    "command": "calva.connect"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "o",
+                "r"
+            ],
+            "when": "calva:connected",
+            "commands": [
+                {
+                    "command": "calva.showReplWindow"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "b"
+            ],
+            "when": "calva:keybindingsEnabled && editorLangId == 'clojure'",
+            "commands": [
+                {
+                    "command": "calva.loadFile"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "d"
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'",
+            "commands": [
+                {
+                    "command": "calva.evaluateCurrentTopLevelForm"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "e"
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && !suggestWidgetVisible && editorLangId == 'clojure'",
+            "commands": [
+                {
+                    "command": "calva.evaluateSelection"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "c"
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'",
+            "commands": [
+                {
+                    "command": "calva.evaluateSelectionAsComment"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "r",
+                "r"
+            ],
+            "when": "calva:connected",
+            "commands": [
+                {
+                    "command": "calva.refreshAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "t",
+                "p"
+            ],
+            "when": "calva:connected",
+            "commands": [
+                {
+                    "command": "calva.runAllTests"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "t",
+                "n"
+            ],
+            "when": "calva:connected",
+            "commands": [
+                {
+                    "command": "calva.runNamespaceTests"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "t",
+                "n"
+            ],
+            "when": "calva:connected",
+            "commands": [
+                {
+                    "command": "calva.runNamespaceTests"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "t",
+                "t"
+            ],
+            "when": "calva:connected",
+            "commands": [
+                {
+                    "command": "calva.runTestUnderCursor"
+                }
+            ]
         }
     ],
     "oil-code.hasNerdFont": true,
     "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "oil-code.enableWorkspaceEdit": true,
-    "oil-code.enableAlternateConfirmation": true
+    "oil-code.enableAlternateConfirmation": true,
+    "prettier.enableDebugLogs": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "projectManager.projectsLocation": "~/Work",
+    "projectManager.sortList": "Recent",
+    "projectManager.git.baseFolders": [
+        "~/Work"
+    ]
 }
