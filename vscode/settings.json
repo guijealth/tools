@@ -213,6 +213,18 @@
         {
             "before": [
                 "leader",
+                "b",
+                "k"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
                 "w",
                 "+"
             ],
@@ -305,6 +317,19 @@
             "commands": [
                 {
                     "command": "workbench.view.explorer"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "o",
+                "p"
+            ],
+            "when": "filesExplorerFocus",
+            "commands": [
+                {
+                    "command": "workbench.action.toggleSidebarVisibility"
                 }
             ]
         },
