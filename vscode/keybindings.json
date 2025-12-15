@@ -188,5 +188,31 @@
         "key": "alt+cmd+h",
         "command": "-vscode-hurl-runner.runHurl",
         "when": "editorTextFocus && editorLangId == 'hurl'"
+    },
+    {
+        "key": "ctrl+x d",
+        "command": "oil-code.open"
+    },
+    {
+        "key": "alt+-",
+        "command": "-oil-code.open"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "github.cweijan.mysql.focus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "pg-objectExplorer.focus"
+    },
+    {
+        "key": "k",
+        "command": "-magit.discard-at-point",
+        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+    },
+    {
+        "key": "tab",
+        "command": "-magit.toggle-fold",
+        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
     }
 ]

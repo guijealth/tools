@@ -61,11 +61,11 @@
         "otherOutput": "repl-window"
     },
     "editor.minimap.enabled": false,
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
     "docker.extension.enableComposeLanguageServer": false,
     "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": true,
-    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": false,
+    "workbench.sideBar.location": "left",
     "editor.hideCursorInOverviewRuler": true,
     "editor.overviewRulerBorder": false,
     "editor.scrollbar.horizontal": "hidden",
@@ -81,6 +81,9 @@
     "editor.lineNumbers": "off",
     "editor.showFoldingControls": "mouseover",
     "workbench.layoutControl.type": "menu",
+    "workbench.colorCustomizations": {
+        "editorLineNumber.foreground": "#5B6268"
+    },
     "window.title": "${rootName}${separator}${profileName}",
     "workbench.editor.showTabs": "single",
     "editor.stickyScroll.maxLineCount": 10,
@@ -592,6 +595,169 @@
                     "command": "calva.runTestUnderCursor"
                 }
             ]
+        },
+        //edamagit
+        {
+            "before": [
+                "leader",
+                "g",
+                "g"
+            ],
+            "commands": [
+                {
+                    "command": "magit.status"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s"
+            ],
+            "commands": [
+                {
+                    "command": "magit.status"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "m"
+            ],
+            "commands": [
+                {
+                    "command": "magit.dispatch"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "r"
+            ],
+            "commands": [
+                {
+                    "command": "magit.refresh"
+                }
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "when": "editorTextFocus && editorLangId == 'magit'",
+            "commands": [
+                {
+                    "command": "magit.discard-at-point"
+                }
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "when": "editorTextFocus && editorLangId == 'magit'",
+            "commands": [
+                {
+                    "command": "magit.discard-at-point"
+                }
+            ]
+        },
+        {
+            "before": [
+                "tab"
+            ],
+            "when": "editorTextFocus && editorLangId == 'magit'",
+            "commands": [
+                {
+                    "command": "magit.toggle-fold"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "b"
+            ],
+            "when": "editorTextFocus",
+            "commands": [
+                {
+                    "command": "magit.blame-file"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "f",
+                "l"
+            ],
+            "when": "editorTextFocus",
+            "commands": [
+                {
+                    "command": "magit.log-file"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "f",
+                "d"
+            ],
+            "when": "editorTextFocus",
+            "commands": [
+                {
+                    "command": "magit.diff-file"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "f",
+                "m"
+            ],
+            "when": "editorTextFocus",
+            "commands": [
+                {
+                    "command": "magit.file-popup"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "S"
+            ],
+            "when": "editorTextFocus",
+            "commands": [
+                {
+                    "command": "magit.stage-file"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "U"
+            ],
+            "when": "editorTextFocus",
+            "commands": [
+                {
+                    "command": "magit.unstage-file"
+                }
+            ]
         }
     ],
     "oil-code.hasNerdFont": true,
@@ -610,5 +776,73 @@
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "[clojure]": {
         "editor.defaultFormatter": "betterthantomorrow.calva"
-    }
+    },
+    "database-client.capitalizeKeywordsWhenFormatting": true,
+    "pgsql.serverGroups": [
+        {
+            "name": "Servers",
+            "id": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "isDefault": true
+        }
+    ],
+    "pgsql.connections": [
+        {
+            "id": "548CC561-735A-4110-8B6D-0582A43CCE89",
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "authenticationType": "SqlLogin",
+            "connectTimeout": 15,
+            "applicationName": "vscode-pgsql",
+            "clientEncoding": "utf8",
+            "sslmode": "prefer",
+            "savePassword": true,
+            "server": "localhost",
+            "user": "postgres",
+            "password": "",
+            "profileName": "tx1-poc",
+            "port": "54321",
+            "sshPassword": "",
+            "expiresOn": 0
+        },
+        {
+            "id": "E6389B24-1C99-4689-AA48-FBFFF503E845",
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "authenticationType": "SqlLogin",
+            "connectTimeout": 15,
+            "applicationName": "vscode-pgsql",
+            "clientEncoding": "utf8",
+            "sslmode": "prefer",
+            "savePassword": true,
+            "server": "localhost",
+            "user": "aidbox",
+            "password": "",
+            "database": "aidbox",
+            "sshPassword": "",
+            "profileName": "localhost, <default> (postgres)",
+            "port": "5432",
+            "expiresOn": 0
+        },
+        {
+            "id": "7F35731D-DB1F-492F-96ED-6980D876FB4E",
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "authenticationType": "SqlLogin",
+            "connectTimeout": 15,
+            "applicationName": "vscode-pgsql",
+            "clientEncoding": "utf8",
+            "sslmode": "prefer",
+            "savePassword": true,
+            "server": "localhost",
+            "user": "postgres",
+            "password": "",
+            "database": "testbox",
+            "sshPassword": "",
+            "profileName": "localhost:5432, testbox (postgres)",
+            "port": "5436",
+            "expiresOn": 0
+        }
+    ],
+    "[sql]": {
+        "editor.defaultFormatter": "ms-ossdata.vscode-pgsql"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "vim.easymotion": true
 }
