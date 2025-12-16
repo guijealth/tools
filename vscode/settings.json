@@ -1,44 +1,44 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "window.zoomLevel": 1,
-    "redhat.telemetry.enabled": false,
-    "editor.accessibilitySupport": "off",
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "csv-edit.readOption_hasHeader": "true",
+    "[clojure]": {
+        "editor.defaultFormatter": "betterthantomorrow.calva"
+    },
+    "[dockercompose]": {
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "comments": false,
+            "other": true,
+            "strings": true
+        },
+        "editor.tabSize": 2
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    "editor.largeFileOptimizations": false,
-    "calva.prettyPrintingOptions": {
-        "printEngine": "pprint",
-        "enabled": false,
-        "width": 120,
-        "maxLength": 50
+    "[sql]": {
+        "editor.defaultFormatter": "ms-ossdata.vscode-pgsql"
     },
-    "calva.autoOpenInspector": false,
-    "editor.minimap.size": "fit",
-    "editor.minimap.maxColumn": 120,
-    "calva.useTestExplorer": true,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "github.copilot.editor.enableAutoCompletions": false,
-    "calva.paredit.defaultKeyMap": "strict",
-    "editor.renderWhitespace": "none",
-    "calva.paredit.killAlsoCutsToClipboard": true,
     "bookmarks.keepBookmarksOnLineDelete": true,
-    "codesnap.containerPadding": "1em",
-    "codesnap.showWindowControls": false,
-    "codesnap.target": "window",
-    "codesnap.transparentBackground": true,
-    "editor.renderControlCharacters": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
+    "breadcrumbs.enabled": false,
     "calva.autoEvaluateCode": {
         "onConnect": {
             "clj": "(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))",
@@ -49,44 +49,151 @@
             "cljs": null
         }
     },
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
+    "calva.autoOpenInspector": false,
     "calva.outputDestinations": {
-        "evalResults": "repl-window",
         "evalOutput": "repl-window",
+        "evalResults": "repl-window",
         "otherOutput": "repl-window"
     },
-    "editor.minimap.enabled": false,
-    "files.autoSave": "afterDelay",
+    "calva.paredit.defaultKeyMap": "strict",
+    "calva.paredit.killAlsoCutsToClipboard": true,
+    "calva.prettyPrintingOptions": {
+        "enabled": true,
+        "maxLength": 50,
+        "printEngine": "pprint",
+        "width": 60
+    },
+    "calva.statusColor": {
+        "dark": {
+            "connectedStatusColor": "#9B9C9F",
+            "disconnectedColor": "#9B9C9F",
+            "launchingColor": "#9B9C9F",
+            "typeStatusColor": "#9B9C9F"
+        },
+        "light": {
+            "connectedStatusColor": "#DB9550",
+            "disconnectedColor": "#777777",
+            "launchingColor": "#000000",
+            "typeStatusColor": "#91dc47"
+        }
+    },
+    "calva.useTestExplorer": true,
+    "codesnap.containerPadding": "1em",
+    "codesnap.showWindowControls": false,
+    "codesnap.target": "window",
+    "codesnap.transparentBackground": true,
+    "csv-edit.readOption_hasHeader": "true",
+    "diffEditor.renderSideBySide": true,
     "docker.extension.enableComposeLanguageServer": false,
-    "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": false,
-    "workbench.sideBar.location": "left",
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.overviewRulerBorder": false,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "breadcrumbs.enabled": false,
-    "workbench.tree.renderIndentGuides": "none",
-    "explorer.decorations.colors": false,
-    "editor.guides.indentation": false,
+    "editor.accessibilitySupport": "off",
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.renderLineHighlight": "none",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "editor.glyphMargin": false,
+    "editor.guides.indentation": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.largeFileOptimizations": true,
     "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 120,
+    "editor.minimap.size": "fit",
+    "editor.overviewRulerBorder": false,
+    "editor.renderControlCharacters": false,
+    "editor.renderLineHighlight": "line",
+    "editor.renderWhitespace": "none",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
     "editor.showFoldingControls": "mouseover",
-    "workbench.layoutControl.type": "menu",
-    "workbench.colorCustomizations": {
-        "editorLineNumber.foreground": "#5B6268"
-    },
-    "window.title": "${rootName}${separator}${profileName}",
-    "workbench.editor.showTabs": "single",
     "editor.stickyScroll.maxLineCount": 10,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "explorer.decorations.colors": false,
+    "files.autoSave": "afterDelay",
+    "git.openRepositoryInParentFolders": "always",
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.enable": {
+        "*": false,
+        "markdown": false,
+        "plaintext": false,
+        "scminput": false
+    },
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "makefile.configureOnOpen": true,
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "oil-code.enableAlternateConfirmation": true,
+    "oil-code.enableWorkspaceEdit": true,
+    "oil-code.hasNerdFont": true,
+    "pgsql.connections": [
+        {
+            "applicationName": "vscode-pgsql",
+            "authenticationType": "SqlLogin",
+            "clientEncoding": "utf8",
+            "connectTimeout": 15,
+            "expiresOn": 0,
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "id": "548CC561-735A-4110-8B6D-0582A43CCE89",
+            "password": "",
+            "port": "54321",
+            "profileName": "tx1-poc",
+            "savePassword": true,
+            "server": "localhost",
+            "sshPassword": "",
+            "sslmode": "prefer",
+            "user": "postgres"
+        },
+        {
+            "applicationName": "vscode-pgsql",
+            "authenticationType": "SqlLogin",
+            "clientEncoding": "utf8",
+            "connectTimeout": 15,
+            "database": "aidbox",
+            "expiresOn": 0,
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "id": "E6389B24-1C99-4689-AA48-FBFFF503E845",
+            "password": "",
+            "port": "5432",
+            "profileName": "localhost, <default> (postgres)",
+            "savePassword": true,
+            "server": "localhost",
+            "sshPassword": "",
+            "sslmode": "prefer",
+            "user": "aidbox"
+        },
+        {
+            "applicationName": "vscode-pgsql",
+            "authenticationType": "SqlLogin",
+            "clientEncoding": "utf8",
+            "connectTimeout": 15,
+            "database": "testbox",
+            "expiresOn": 0,
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "id": "7F35731D-DB1F-492F-96ED-6980D876FB4E",
+            "password": "",
+            "port": "5436",
+            "profileName": "localhost:5432, testbox (postgres)",
+            "savePassword": true,
+            "server": "localhost",
+            "sshPassword": "",
+            "sslmode": "prefer",
+            "user": "postgres"
+        }
+    ],
+    "pgsql.serverGroups": [
+        {
+            "id": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "isDefault": true,
+            "name": "Servers"
+        }
+    ],
+    "prettier.enableDebugLogs": true,
+    "projectManager.git.baseFolders": [
+        "~/Work"
+    ],
+    "projectManager.projectsLocation": "~/Work",
+    "projectManager.sortList": "Recent",
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
     "settings.cycle": [
         {
             "id": "lineNumbers",
@@ -114,10 +221,10 @@
             "id": "activityBar",
             "values": [
                 {
-                    "workbench.activityBar.location": "hidden",
+                    "workbench.activityBar.location": "hidden"
                 },
                 {
-                    "workbench.activityBar.location": "default",
+                    "workbench.activityBar.location": "default"
                 }
             ]
         },
@@ -125,59 +232,16 @@
             "id": "glyphMargin",
             "values": [
                 {
-                    "editor.glyphMargin": false,
+                    "editor.glyphMargin": false
                 },
                 {
-                    "editor.glyphMargin": true,
+                    "editor.glyphMargin": true
                 }
             ]
         }
     ],
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "workbench.colorTheme": "Doom Emacs",
-    "diffEditor.renderSideBySide": true,
-    "window.commandCenter": false,
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "makefile.configureOnOpen": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.confirmBeforeClose": "always",
-    "[dockercompose]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.autoIndent": "advanced",
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": false,
-            "strings": true
-        },
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[github-actions-workflow]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "vscode-hurl-runner.verboseMode": "very-verbose",
+    "vim.easymotion": true,
     "vim.leader": "<space>",
-    "vim.useSystemClipboard": true,
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "leader",
-                "m",
-                "e",
-                "r"
-            ],
-            "when": "calva:keybindingsEnabled && editorTextFocus && !suggestWidgetVisible && editorLangId == 'clojure'",
-            "commands": [
-                {
-                    "command": "calva.evaluateSelection"
-                }
-            ]
-        }
-    ],
     "vim.normalModeKeyBindings": [
         // project
         {
@@ -234,6 +298,18 @@
                 "leader",
                 "b",
                 "k"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "b",
+                "d"
             ],
             "commands": [
                 {
@@ -345,12 +421,12 @@
                 "o",
                 "p"
             ],
-            "when": "filesExplorerFocus",
             "commands": [
                 {
                     "command": "workbench.action.toggleSidebarVisibility"
                 }
-            ]
+            ],
+            "when": "filesExplorerFocus"
         },
         // fold
         {
@@ -358,12 +434,12 @@
                 "z",
                 "a"
             ],
-            "when": "editorTextFocus && foldingEnabled",
             "commands": [
                 {
                     "command": "editor.toggleFold"
                 }
-            ]
+            ],
+            "when": "editorTextFocus && foldingEnabled"
         },
         // dired
         {
@@ -384,10 +460,10 @@
             "before": [
                 "<esc>"
             ],
-            "when": "editorTextFocus && editorLangId == 'oil'",
             "commands": [
                 "oil-code.close"
-            ]
+            ],
+            "when": "editorTextFocus && editorLangId == 'oil'"
         },
         {
             "before": [
@@ -413,21 +489,21 @@
             "before": [
                 "<a-`>"
             ],
-            "when": "editorTextFocus && editorLangId == 'oil'",
             "commands": [
                 {
                     "command": "oil-code.cd"
                 }
-            ]
+            ],
+            "when": "editorTextFocus && editorLangId == 'oil'"
         },
         {
             "before": [
                 "-"
             ],
-            "when": "editorTextFocus && editorLangId == 'oil'",
             "commands": [
                 "oil-code.open"
-            ]
+            ],
+            "when": "editorTextFocus && editorLangId == 'oil'"
         },
         // calva
         {
@@ -436,12 +512,12 @@
                 "m",
                 "c"
             ],
-            "when": "workspaceFolderCount > 0",
             "commands": [
                 {
                     "command": "calva.connect"
                 }
-            ]
+            ],
+            "when": "workspaceFolderCount > 0"
         },
         {
             "before": [
@@ -449,12 +525,12 @@
                 "o",
                 "r"
             ],
-            "when": "calva:connected",
             "commands": [
                 {
                     "command": "calva.showReplWindow"
                 }
-            ]
+            ],
+            "when": "calva:connected"
         },
         {
             "before": [
@@ -463,12 +539,12 @@
                 "e",
                 "b"
             ],
-            "when": "calva:keybindingsEnabled && editorLangId == 'clojure'",
             "commands": [
                 {
                     "command": "calva.loadFile"
                 }
-            ]
+            ],
+            "when": "calva:keybindingsEnabled && editorLangId == 'clojure'"
         },
         {
             "before": [
@@ -477,12 +553,12 @@
                 "e",
                 "d"
             ],
-            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'",
             "commands": [
                 {
                     "command": "calva.evaluateCurrentTopLevelForm"
                 }
-            ]
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
         },
         {
             "before": [
@@ -491,12 +567,12 @@
                 "e",
                 "e"
             ],
-            "when": "calva:keybindingsEnabled && editorTextFocus && !suggestWidgetVisible && editorLangId == 'clojure'",
             "commands": [
                 {
                     "command": "calva.evaluateSelection"
                 }
-            ]
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && !suggestWidgetVisible && editorLangId == 'clojure'"
         },
         {
             "before": [
@@ -505,12 +581,12 @@
                 "e",
                 "E"
             ],
-            "when": "calva:connected",
             "commands": [
                 {
                     "command": "calva.sendCurrentFormToOutputWindow"
                 }
-            ]
+            ],
+            "when": "calva:connected"
         },
         {
             "before": [
@@ -519,12 +595,26 @@
                 "e",
                 "c"
             ],
-            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'",
             "commands": [
                 {
                     "command": "calva.evaluateSelectionAsComment"
                 }
-            ]
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "p",
+                "P"
+            ],
+            "commands": [
+                {
+                    "command": "calva.evaluateSelectionAsComment"
+                }
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
         },
         {
             "before": [
@@ -533,12 +623,12 @@
                 "r",
                 "r"
             ],
-            "when": "calva:connected",
             "commands": [
                 {
                     "command": "calva.refreshAll"
                 }
-            ]
+            ],
+            "when": "calva:connected"
         },
         {
             "before": [
@@ -547,12 +637,12 @@
                 "t",
                 "p"
             ],
-            "when": "calva:connected",
             "commands": [
                 {
                     "command": "calva.runAllTests"
                 }
-            ]
+            ],
+            "when": "calva:connected"
         },
         {
             "before": [
@@ -561,12 +651,12 @@
                 "t",
                 "n"
             ],
-            "when": "calva:connected",
             "commands": [
                 {
                     "command": "calva.runNamespaceTests"
                 }
-            ]
+            ],
+            "when": "calva:connected"
         },
         {
             "before": [
@@ -575,12 +665,12 @@
                 "t",
                 "n"
             ],
-            "when": "calva:connected",
             "commands": [
                 {
                     "command": "calva.runNamespaceTests"
                 }
-            ]
+            ],
+            "when": "calva:connected"
         },
         {
             "before": [
@@ -589,12 +679,12 @@
                 "t",
                 "t"
             ],
-            "when": "calva:connected",
             "commands": [
                 {
                     "command": "calva.runTestUnderCursor"
                 }
-            ]
+            ],
+            "when": "calva:connected"
         },
         //edamagit
         {
@@ -647,36 +737,14 @@
         },
         {
             "before": [
-                "K"
-            ],
-            "when": "editorTextFocus && editorLangId == 'magit'",
-            "commands": [
-                {
-                    "command": "magit.discard-at-point"
-                }
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "when": "editorTextFocus && editorLangId == 'magit'",
-            "commands": [
-                {
-                    "command": "magit.discard-at-point"
-                }
-            ]
-        },
-        {
-            "before": [
                 "tab"
             ],
-            "when": "editorTextFocus && editorLangId == 'magit'",
             "commands": [
                 {
                     "command": "magit.toggle-fold"
                 }
-            ]
+            ],
+            "when": "editorTextFocus && editorLangId == 'magit'"
         },
         {
             "before": [
@@ -684,12 +752,12 @@
                 "g",
                 "b"
             ],
-            "when": "editorTextFocus",
             "commands": [
                 {
                     "command": "magit.blame-file"
                 }
-            ]
+            ],
+            "when": "editorTextFocus"
         },
         {
             "before": [
@@ -698,12 +766,12 @@
                 "f",
                 "l"
             ],
-            "when": "editorTextFocus",
             "commands": [
                 {
                     "command": "magit.log-file"
                 }
-            ]
+            ],
+            "when": "editorTextFocus"
         },
         {
             "before": [
@@ -712,12 +780,12 @@
                 "f",
                 "d"
             ],
-            "when": "editorTextFocus",
             "commands": [
                 {
                     "command": "magit.diff-file"
                 }
-            ]
+            ],
+            "when": "editorTextFocus"
         },
         {
             "before": [
@@ -726,12 +794,12 @@
                 "f",
                 "m"
             ],
-            "when": "editorTextFocus",
             "commands": [
                 {
                     "command": "magit.file-popup"
                 }
-            ]
+            ],
+            "when": "editorTextFocus"
         },
         {
             "before": [
@@ -739,12 +807,12 @@
                 "g",
                 "S"
             ],
-            "when": "editorTextFocus",
             "commands": [
                 {
                     "command": "magit.stage-file"
                 }
-            ]
+            ],
+            "when": "editorTextFocus"
         },
         {
             "before": [
@@ -752,97 +820,49 @@
                 "g",
                 "U"
             ],
-            "when": "editorTextFocus",
             "commands": [
                 {
                     "command": "magit.unstage-file"
                 }
-            ]
+            ],
+            "when": "editorTextFocus"
         }
     ],
-    "oil-code.hasNerdFont": true,
-    "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-    "oil-code.enableWorkspaceEdit": true,
-    "oil-code.enableAlternateConfirmation": true,
-    "prettier.enableDebugLogs": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "notebook.defaultFormatter": "esbenp.prettier-vscode",
-    "projectManager.projectsLocation": "~/Work",
-    "projectManager.sortList": "Recent",
-    "projectManager.git.baseFolders": [
-        "~/Work"
+    "vim.useSystemClipboard": true,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "r"
+            ],
+            "commands": [
+                {
+                    "command": "calva.evaluateSelection"
+                }
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && !suggestWidgetVisible && editorLangId == 'clojure'"
+        }
     ],
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "[clojure]": {
-        "editor.defaultFormatter": "betterthantomorrow.calva"
+    "vscode-hurl-runner.verboseMode": "very-verbose",
+    "window.commandCenter": false,
+    "window.confirmBeforeClose": "always",
+    "window.title": "${rootName}${separator}${profileName}",
+    "window.zoomLevel": 1.3,
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#22242B",
+        "editorLineNumber.foreground": "#5B6268",
+        "statusBar.background": "#22242B",
+        "statusBar.foreground": "#9B9C9F"
     },
-    "database-client.capitalizeKeywordsWhenFormatting": true,
-    "pgsql.serverGroups": [
-        {
-            "name": "Servers",
-            "id": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
-            "isDefault": true
-        }
-    ],
-    "pgsql.connections": [
-        {
-            "id": "548CC561-735A-4110-8B6D-0582A43CCE89",
-            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
-            "authenticationType": "SqlLogin",
-            "connectTimeout": 15,
-            "applicationName": "vscode-pgsql",
-            "clientEncoding": "utf8",
-            "sslmode": "prefer",
-            "savePassword": true,
-            "server": "localhost",
-            "user": "postgres",
-            "password": "",
-            "profileName": "tx1-poc",
-            "port": "54321",
-            "sshPassword": "",
-            "expiresOn": 0
-        },
-        {
-            "id": "E6389B24-1C99-4689-AA48-FBFFF503E845",
-            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
-            "authenticationType": "SqlLogin",
-            "connectTimeout": 15,
-            "applicationName": "vscode-pgsql",
-            "clientEncoding": "utf8",
-            "sslmode": "prefer",
-            "savePassword": true,
-            "server": "localhost",
-            "user": "aidbox",
-            "password": "",
-            "database": "aidbox",
-            "sshPassword": "",
-            "profileName": "localhost, <default> (postgres)",
-            "port": "5432",
-            "expiresOn": 0
-        },
-        {
-            "id": "7F35731D-DB1F-492F-96ED-6980D876FB4E",
-            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
-            "authenticationType": "SqlLogin",
-            "connectTimeout": 15,
-            "applicationName": "vscode-pgsql",
-            "clientEncoding": "utf8",
-            "sslmode": "prefer",
-            "savePassword": true,
-            "server": "localhost",
-            "user": "postgres",
-            "password": "",
-            "database": "testbox",
-            "sshPassword": "",
-            "profileName": "localhost:5432, testbox (postgres)",
-            "port": "5436",
-            "expiresOn": 0
-        }
-    ],
-    "[sql]": {
-        "editor.defaultFormatter": "ms-ossdata.vscode-pgsql"
-    },
-    "git.openRepositoryInParentFolders": "always",
-    "vim.easymotion": true
+    "workbench.colorTheme": "Doom Emacs",
+    "workbench.editor.showTabs": "single",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.layoutControl.type": "menu",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": true,
+    "workbench.tree.renderIndentGuides": "none"
 }
