@@ -37,6 +37,9 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
     "bookmarks.keepBookmarksOnLineDelete": true,
     "breadcrumbs.enabled": false,
     "calva.autoEvaluateCode": {
@@ -755,17 +758,6 @@
                     "command": "magit.refresh"
                 }
             ]
-        },
-        {
-            "before": [
-                "tab"
-            ],
-            "commands": [
-                {
-                    "command": "magit.toggle-fold"
-                }
-            ],
-            "when": "editorTextFocus && editorLangId == 'magit'"
         },
         {
             "before": [

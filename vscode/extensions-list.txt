@@ -1,7 +1,6 @@
 adpyke.codesnap
 alefragnani.bookmarks
 alefragnani.project-manager
-alexcvzz.vscode-sqlite
 anthropic.claude-code
 artemsharko.file-progress
 betterthantomorrow.calva

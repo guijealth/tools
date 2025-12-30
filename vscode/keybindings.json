@@ -211,6 +211,21 @@
         "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
     },
     {
+        "key": "x",
+        "command": "-magit.reset-mixed",
+        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+    },
+    {
+        "key": "shift+k",
+        "command": "magit.discard-at-point",
+        "when": "editorTextFocus && editorLangId == 'magit'"
+    },
+    {
+        "key": "tab",
+        "command": "magit.toggle-fold",
+        "when": "editorTextFocus && editorLangId == 'magit'"
+    },
+    {
         "key": "tab",
         "command": "-magit.toggle-fold",
         "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
