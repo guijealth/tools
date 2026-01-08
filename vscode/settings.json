@@ -114,7 +114,7 @@
     "editor.stickyScroll.maxLineCount": 10,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "explorer.decorations.colors": false,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "git.openRepositoryInParentFolders": "always",
     "github.copilot.editor.enableAutoCompletions": false,
     "github.copilot.enable": {
@@ -706,6 +706,20 @@
             "commands": [
                 {
                     "command": "calva.runTestUnderCursor"
+                }
+            ],
+            "when": "calva:connected"
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "o",
+                "p"
+            ],
+            "commands": [
+                {
+                    "command": "extension.portalOpen"
                 }
             ],
             "when": "calva:connected"
