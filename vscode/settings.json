@@ -201,6 +201,24 @@
             "sshPassword": "",
             "sslmode": "prefer",
             "user": "postgres"
+        },
+        {
+            "id": "4F44B9E2-4994-4694-8278-A91F2B562C8B",
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "authenticationType": "None",
+            "connectTimeout": 15,
+            "applicationName": "vscode-pgsql",
+            "clientEncoding": "utf8",
+            "sslmode": "prefer",
+            "server": "localhost",
+            "expiresOn": 0,
+            "emptyPasswordInput": true,
+            "user": "postgres",
+            "database": "termbox",
+            "profileName": "termbox",
+            "password": "",
+            "sshPassword": "",
+            "port": "54321"
         }
     ],
     "pgsql.serverGroups": [
@@ -320,24 +338,13 @@
         {
             "before": [
                 "leader",
-                "b",
-                "k"
+                "w",
+                "m"
             ],
+            "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups",
             "commands": [
                 {
-                    "command": "workbench.action.closeActiveEditor"
-                }
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "b",
-                "d"
-            ],
-            "commands": [
-                {
-                    "command": "workbench.action.closeActiveEditor"
+                    "command": "workbench.action.toggleMaximizeEditorGroup"
                 }
             ]
         },
@@ -410,6 +417,30 @@
             "commands": [
                 {
                     "command": "workbench.action.navigateUp"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "b",
+                "k"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "b",
+                "d"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
                 }
             ]
         },
@@ -723,6 +754,48 @@
                 }
             ],
             "when": "calva:connected"
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "f",
+                "a"
+            ],
+            "commands": [
+                {
+                    "command": "calva-fmt.alignCurrentForm"
+                }
+            ],
+            "when": "calva:connected && editorLangId == 'clojure'"
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "f",
+                "f"
+            ],
+            "commands": [
+                {
+                    "command": "calva-fmt.formatCurrentForm"
+                }
+            ],
+            "when": "calva:connected && editorLangId == 'clojure'"
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "f",
+                "b"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.formatDocument"
+                }
+            ],
+            "when": "calva:connected && editorLangId == 'clojure' && editorTextFocus !editorReadonly"
         },
         //edamagit
         {
