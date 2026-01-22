@@ -423,6 +423,18 @@
         {
             "before": [
                 "leader",
+                "n",
+                "q"
+            ],
+            "commands": [
+                {
+                    "command": "notifications.clearAll"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
                 "b",
                 "k"
             ],
@@ -656,6 +668,20 @@
                 }
             ],
             "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "t"
+            ],
+            "commands": [
+                {
+                    "command": "calva.tapCurrentTopLevelForm"
+                }
+            ],
+            "when": "calva:connected"
         },
         {
             "before": [
@@ -960,6 +986,11 @@
         "statusBar.foreground": "#9B9C9F"
     },
     "workbench.colorTheme": "Doom Emacs",
+    "editor.tokenColorCustomizations": {
+        "[Doom Emacs]": {
+            "comments": "#83898D"
+        }
+    },
     "workbench.editor.showTabs": "single",
     "workbench.iconTheme": "vscode-icons",
     "workbench.layoutControl.enabled": false,
@@ -967,5 +998,6 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": true,
-    "workbench.tree.renderIndentGuides": "none"
+    "workbench.tree.renderIndentGuides": "none",
+    "projectManager.showProjectNameInStatusBar": false
 }

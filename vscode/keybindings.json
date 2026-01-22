@@ -73,7 +73,7 @@
     {
         "key": "shift+.",
         "command": "paredit.slurpSexpForward",
-        "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert' && !renameInputVisible"
+        "when": "editorLangId == 'clojure' && editorTextFocus && vim.active && vim.mode != 'Insert' && !renameInputVisible"
     },
     {
         "key": "ctrl+alt+.",
@@ -83,7 +83,7 @@
     {
         "key": "shift+,",
         "command": "paredit.barfSexpForward",
-        "when": "editorLangId == 'clojure' && vim.active && vim.mode != 'Insert' && !renameInputVisible"
+        "when": "editorLangId == 'clojure' && editorTextFocus && vim.active && vim.mode != 'Insert' && !renameInputVisible"
     },
     {
         "key": "ctrl+alt+,",

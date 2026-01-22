@@ -126,6 +126,12 @@ Leader key: `<space>`
 | Kill buffer  | `SPC b k`   |
 | Kill buffer  | `SPC b d`   |
 
+#### Notifications
+
+| Command      | Keybinding  |
+| ------------ | ----------- |
+| Clear all    | `SPC n q`   |
+
 #### Open
 
 | Command         | Keybinding  |
@@ -144,14 +150,14 @@ Leader key: `<space>`
 
 Vim-style file browser.
 
-| Command    | Keybinding  |
-| ---------- | ----------- |
-| Open       | `CTRL+x d`  |
-| Close      | `ESC`       |
-| Select     | `ENTER`     |
-| Parent dir | `-`         |
-| Refresh    | `CTRL+l`    |
-| Change dir | `ALT+\``    |
+| Command    | Keybinding       |
+| ---------- | ---------------- |
+| Open       | `CTRL+x` `d`     |
+| Close      | `ESC`            |
+| Select     | `ENTER`          |
+| Parent dir | `-`              |
+| Refresh    | `CTRL+l`         |
+| Change dir | `ALT+\``         |
 
 ### Git (Edamagit)
 
@@ -233,6 +239,7 @@ Quick toggles for UI elements.
 | Eval selection (visual)   | `SPC m e r` | calva.evaluateSelection             |
 | Send form to REPL         | `SPC m e E` | calva.sendCurrentFormToOutputWindow |
 | Eval to comment           | `SPC m e c` | calva.evaluateSelectionAsComment    |
+| Tap to Portal             | `SPC m e t` | calva.tapCurrentTopLevelForm        |
 | Pretty print to comment   | `SPC m p P` | calva.evaluateSelectionAsComment    |
 | Refresh all namespaces    | `SPC m r r` | calva.refreshAll                    |
 

@@ -7,7 +7,6 @@ betterthantomorrow.calva
 betterthantomorrow.calva-spritz
 bodil.file-browser
 bradlc.vscode-tailwindcss
-djblue.portal
 docker.docker
 eamodio.gitlens
 esbenp.prettier-vscode
