@@ -58,7 +58,7 @@
         "evalResults": "repl-window",
         "otherOutput": "repl-window"
     },
-    "calva.paredit.defaultKeyMap": "original",
+    "calva.paredit.defaultKeyMap": "strict",
     "calva.paredit.killAlsoCutsToClipboard": true,
     "calva.prettyPrintingOptions": {
         "enabled": true,
@@ -203,22 +203,47 @@
             "user": "postgres"
         },
         {
-            "id": "4F44B9E2-4994-4694-8278-A91F2B562C8B",
+            "id": "322E6F9B-E892-4D50-A8DF-6540594FFD41",
             "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
-            "authenticationType": "None",
+            "authenticationType": "SqlLogin",
             "connectTimeout": 15,
             "applicationName": "vscode-pgsql",
             "clientEncoding": "utf8",
             "sslmode": "prefer",
+            "sshSavePassword": true,
+            "savePassword": true,
+            "sslRootCertMode": "none",
+            "server": "localhost",
+            "user": "postgres",
+            "password": "",
+            "database": "staging",
+            "profileName": "onto-termbox-stg",
+            "port": "65432",
+            "expiresOn": 0,
+            "sshPassword": ""
+        },
+        {
+            "id": "4F44B9E2-4994-4694-8278-A91F2B562C8B",
+            "groupId": "0E6C2A27-4345-42FF-A27E-3CA4BDA7283D",
+            "authenticationType": "SqlLogin",
+            "connectTimeout": 15,
+            "applicationName": "vscode-pgsql",
+            "clientEncoding": "utf8",
+            "sslmode": "prefer",
+            "sshSavePassword": true,
+            "savePassword": true,
+            "sslRootCertMode": "none",
             "server": "localhost",
             "expiresOn": 0,
-            "emptyPasswordInput": true,
+            "emptyPasswordInput": false,
             "user": "postgres",
             "database": "termbox",
             "profileName": "termbox",
             "password": "",
             "sshPassword": "",
-            "port": "54321"
+            "port": "54321",
+            "profileSource": 0,
+            "displayName": "termbox"
         }
     ],
     "pgsql.serverGroups": [
@@ -353,6 +378,18 @@
                 "leader",
                 "w",
                 "+"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.increaseViewWidth"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w",
+                "="
             ],
             "commands": [
                 {
@@ -999,5 +1036,6 @@
     "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": true,
     "workbench.tree.renderIndentGuides": "none",
-    "projectManager.showProjectNameInStatusBar": false
+    "projectManager.showProjectNameInStatusBar": false,
+    "clojure.trace.server": "messages"
 }

@@ -249,5 +249,10 @@
         "key": "ctrl+p",
         "command": "-workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     }
 ]

@@ -14,6 +14,7 @@ Path: `./vscode`
 - **Icon Theme:** vscode-icons
 - **Font:** FiraCode Nerd Font
 - **Minimalist UI:** Line numbers off, minimap disabled, scrollbars hidden, activity bar hidden, breadcrumbs disabled
+- **Large files:** Large file optimizations disabled
 
 ### Language Formatters
 
@@ -34,7 +35,7 @@ Path: `./vscode`
 ### Extensions
 
 <details>
-<summary>Click to expand full extensions list (54 extensions)</summary>
+<summary>Click to expand full extensions list (58 extensions)</summary>
 
 | Extension                                  | Description                |
 | ------------------------------------------ | -------------------------- |
@@ -47,12 +48,10 @@ Path: `./vscode`
 | betterthantomorrow.calva-spritz            | Calva Spritz               |
 | bodil.file-browser                         | File Browser               |
 | bradlc.vscode-tailwindcss                  | Tailwind CSS               |
-| djblue.portal                              | Portal (Clojure)           |
 | docker.docker                              | Docker                     |
 | eamodio.gitlens                            | GitLens                    |
 | esbenp.prettier-vscode                     | Prettier                   |
-| github.copilot                             | GitHub Copilot             |
-| github.copilot-chat                        | GitHub Copilot Chat        |
+| github.vscode-github-actions               | GitHub Actions             |
 | gruntfuggly.todo-tree                      | Todo Tree                  |
 | haphazarddev.oil-code                      | Oil Code (Dired)           |
 | hbenl.vscode-mocha-test-adapter            | Mocha Test Adapter         |
@@ -69,7 +68,7 @@ Path: `./vscode`
 | mechatroner.rainbow-csv                    | Rainbow CSV                |
 | ms-azuretools.vscode-containers            | Containers                 |
 | ms-azuretools.vscode-docker                | Docker                     |
-| ms-kubernetes-tools.vscode-kubernetes-tools| Kubernetes                 |
+| ms-kubernetes-tools.vscode-kubernetes-tools | Kubernetes                 |
 | ms-ossdata.vscode-pgsql                    | PostgreSQL                 |
 | ms-vscode-remote.remote-containers         | Remote Containers          |
 | ms-vscode-remote.remote-ssh                | Remote SSH                 |
@@ -82,11 +81,18 @@ Path: `./vscode`
 | oven.bun-vscode                            | Bun                        |
 | pascalreitermann93.vscode-yaml-sort        | YAML Sort                  |
 | quicktype.quicktype                        | Quicktype                  |
+| redhat.java                                | Java                       |
 | redhat.vscode-xml                          | XML                        |
 | redhat.vscode-yaml                         | YAML                       |
 | stevesevets.doom-emacs-theme               | Doom Emacs Theme           |
 | vitaliymaz.vscode-svg-previewer            | SVG Previewer              |
 | vscode-icons-team.vscode-icons             | VSCode Icons               |
+| vscjava.vscode-gradle                      | Gradle for Java            |
+| vscjava.vscode-java-debug                  | Java Debugger              |
+| vscjava.vscode-java-dependency             | Java Dependency Viewer     |
+| vscjava.vscode-java-pack                   | Extension Pack for Java    |
+| vscjava.vscode-java-test                   | Java Test Runner           |
+| vscjava.vscode-maven                       | Maven for Java             |
 | vscodevim.vim                              | Vim                        |
 | vspacecode.whichkey                        | WhichKey                   |
 | yzane.markdown-pdf                         | Markdown PDF               |
@@ -113,6 +119,7 @@ Leader key: `<space>`
 | Close window         | `SPC w q`   |
 | Maximize/restore     | `SPC w m`   |
 | Increase width       | `SPC w +`   |
+| Increase width       | `SPC w =`   |
 | Decrease width       | `SPC w -`   |
 | Navigate left        | `SPC w h`   |
 | Navigate right       | `SPC w l`   |
