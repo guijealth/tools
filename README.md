@@ -35,7 +35,7 @@ Path: `./vscode`
 ### Extensions
 
 <details>
-<summary>Click to expand full extensions list (58 extensions)</summary>
+<summary>Click to expand full extensions list (62 extensions)</summary>
 
 | Extension                                  | Description                |
 | ------------------------------------------ | -------------------------- |
@@ -70,6 +70,10 @@ Path: `./vscode`
 | ms-azuretools.vscode-docker                | Docker                     |
 | ms-kubernetes-tools.vscode-kubernetes-tools | Kubernetes                 |
 | ms-ossdata.vscode-pgsql                    | PostgreSQL                 |
+| ms-python.debugpy                          | Python Debugger            |
+| ms-python.python                           | Python                     |
+| ms-python.vscode-pylance                   | Pylance                    |
+| ms-python.vscode-python-envs               | Python Environments        |
 | ms-vscode-remote.remote-containers         | Remote Containers          |
 | ms-vscode-remote.remote-ssh                | Remote SSH                 |
 | ms-vscode-remote.remote-ssh-edit           | Remote SSH Edit            |
@@ -243,7 +247,7 @@ Quick toggles for UI elements.
 | Eval file                 | `SPC m e b` | calva.loadFile                      |
 | Eval top level form       | `SPC m e d` | calva.evaluateCurrentTopLevelForm   |
 | Eval current form         | `SPC m e e` | calva.evaluateSelection             |
-| Eval selection (visual)   | `SPC m e r` | calva.evaluateSelection             |
+| Eval & replace selection  | `SPC m e r` | calva.evaluateSelectionReplace      |
 | Send form to REPL         | `SPC m e E` | calva.sendCurrentFormToOutputWindow |
 | Eval to comment           | `SPC m e c` | calva.evaluateSelectionAsComment    |
 | Tap to Portal             | `SPC m e t` | calva.tapCurrentTopLevelForm        |

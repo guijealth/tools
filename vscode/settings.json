@@ -241,7 +241,7 @@
             "profileName": "termbox",
             "password": "",
             "sshPassword": "",
-            "port": "54321",
+            "port": "5432",
             "profileSource": 0,
             "displayName": "termbox"
         }
@@ -702,6 +702,20 @@
             "commands": [
                 {
                     "command": "calva.evaluateSelectionAsComment"
+                }
+            ],
+            "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
+        },
+        {
+            "before": [
+                "leader",
+                "m",
+                "e",
+                "r"
+            ],
+            "commands": [
+                {
+                    "command": "calva.evaluateSelectionReplace"
                 }
             ],
             "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure'"
